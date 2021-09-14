@@ -12,3 +12,9 @@ jobs:
     - name: Run unit test
       run: |
         set -o pipefail && xcodebuild test -workspace ShadowsocksX-NG.xcworkspace -scheme ShadowsocksX-NG|xcpretty
+    - name: build
+      run: |
+        set -o pipefail && xcodebuild -workspace ShadowsocksX-NG.xcworkspace -config Release -scheme ShadowsocksX-NG|xcpretty
+    - name: export
+      run: |
+        xcodebuild -exportArchive -exportPath 'ShadowsocksX-NG.app' -exportFormat App
