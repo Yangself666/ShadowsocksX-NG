@@ -1,4 +1,4 @@
-# ShadowsocksX-NG
+# ShadowsocksX-NG 
 
 [Download](https://github.com/shadowsocks/ShadowsocksX-NG/releases/latest)
 
